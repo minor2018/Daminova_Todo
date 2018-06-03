@@ -1,0 +1,185 @@
+ @import url(http://allfont.ru/allfont.css?fonts=arial-narrow);
+
+body {
+  font-family: 'Arial Narrow', arial;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-image: url(./images/logohse.png);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  padding: 0;
+  margin: 0;
+ 
+  font-size: 14px;
+}
+ 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: #ffffff;
+}
+ 
+header {
+  background: #253957;
+  padding: 20px 15px 15px 15px;
+  position: relative;
+  font-color: white;
+}
+ 
+#login-buttons {
+  display: block;
+}
+ 
+h1 {
+  font-size: 30px;
+  color: white;
+  font-family: 'Arial Narrow', arial;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+ h2 {
+   font-size: 15px;
+   font-weight: bold;
+   color: #ffffff;
+   float: right;
+   font-family: 'Arial Narrow', arial;
+   margin: 0;
+   margin-bottom: 10px;
+   display: inline-block;
+   margin-right: -12em;
+   margin-top: 3.65em;
+ }
+
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+ 
+.new-task input {
+  box-sizing: border-box;
+  padding: 5px 0;
+  background: #ffffff;
+  border: none;
+  width: 60%;
+  padding-right: 80px;
+  padding-left: 5px;
+  font-size: 1em;
+}
+ 
+.new-task input:focus{
+  outline: 0;
+}
+ 
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+ 
+.delete {
+  float: right;
+  font-weight: right;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+ 
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+  font-size: 15px;
+}
+ 
+li .text {
+  margin-left: 10px;
+}
+ 
+li.checked {
+  color: #888;
+}
+ 
+li.checked .text {
+  text-decoration: line-through;
+}
+ 
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+ 
+header .hide-completed {
+  float: right;
+  color: white;
+  margin top: 7px;
+}
+ 
+.toggle-private {
+  margin-left: 5px;
+}
+ 
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+ 
+  .search {
+    width: 150px;
+    clear: both;
+  }
+ 
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
+
+.container2 {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: #253957;
+}
+
+ h3 {
+   font-size: 30px;
+   float: right;
+   font-family: 'Arial Narrow', arial;
+   margin: 0;
+   margin-bottom: 10px;
+   display: inline-block;
+   margin-right: 1em;
+   font-color: #ffffff;
+ }
+
+
+.checkbox {
+	margin-right: 5px;
+    margin-top: 0px;
+}
+
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input[type="checkbox"] {
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    font-size: 15px;
+}
