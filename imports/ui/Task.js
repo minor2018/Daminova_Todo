@@ -25,7 +25,7 @@ render() {
 
 
                               <Button bsStyle={!!this.props.task.checked?"success":"warning"} onClick={this.toggleChecked.bind(this)}>
-                                  <Glyphicon glyph={!!this.props.task.checked?"ok":"repeat"}/>
+                                  <Glyphicon glyph={!!this.props.task.checked?"ok":"play"}/>
                               </Button>
                       </ButtonGroup>
 
