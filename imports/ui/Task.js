@@ -17,23 +17,19 @@ render() {
     const taskClassName = this.props.task.checked ? 'checked' : '';
     return (
       <li className={taskClassName}>
-                      <ButtonGroup>
-
-                      <Button bsStyle="danger" onClick={this.deleteThisTask.bind(this)}>
-                          <Glyphicon glyph="remove"/>
-                      </Button>
-
-
-                              <Button bsStyle={!!this.props.task.checked?"success":"warning"} onClick={this.toggleChecked.bind(this)}>
-                                  <Glyphicon glyph={!!this.props.task.checked?"ok":"play"}/>
-                              </Button>
-                      </ButtonGroup>
-
-
-
-                      <span className="text">{this.props.task.text}</span>
-
-                  </li>
+        <button className="delete" onClick={this.deleteThisTask.bind(this)}>
+          &times;
+        </button>
+ 
+        <input
+          type="checkbox"
+          readOnly
+          checked={!!this.props.task.checked}
+          onClick={this.toggleChecked.bind(this)}
+        />
+ 
+        <span className="text">{this.props.task.text}</span>
+      </li>
               );
           }
       }
