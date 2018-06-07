@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import { Tasks } from '../api/tasks.js';
-import { Button, Glyphicon, ButtonGroup } from 'react-bootstrap';
 
 export default class Task extends Component {
 toggleChecked() {
